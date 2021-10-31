@@ -13,10 +13,11 @@ class BlogDetail extends Component {
             time: '',
             description: '',
             content: '',
+            blog: blog,
         }
     }
     componentDidMount = async () => {
-        const { id } = this.state
+        const { id, blog } = this.state
         blog.forEach(res => {
             if (id === res.id) {
                 this.setState({

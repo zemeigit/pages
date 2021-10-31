@@ -10,6 +10,7 @@ function App() {
             <Switch>
                 <Route path="/about" exact component={AboutMe} />
                 <Route path="/" exact component={MainPage} />
+                <Route path="/pages" exact component={MainPage} />
                 <Route path="/blog/list" exact component={BlogList} />
                 <Route path="/blog/detail/:id" exact component={BlogDetail} />
             </Switch>
